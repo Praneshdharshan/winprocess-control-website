@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 210 40% 98%;
+        --foreground: 222 47% 11%;
+        --card: 0 0% 100%;
+        --card-foreground: 222 47% 11%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222 47% 11%;
+        --primary: 207 74% 47%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 237 51% 38%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 214 32% 93%;
+        --muted-foreground: 215 16% 42%;
+        --accent: 199 65% 90%;
+        --accent-foreground: 207 74% 30%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 214 32% 88%;
+        --input: 214 32% 85%;
+        --ring: 207 74% 47%;
+        --radius: 0.75rem;
+        --brand-deep: 222 60% 22%;
+        --hero-from: 211 78% 38%;
+        --hero-to: 205 85% 55%;
+    }
+
+    .dark {
+        --background: 218 55% 7%;
+        --foreground: 210 40% 96%;
+        --card: 218 45% 11%;
+        --card-foreground: 210 40% 96%;
+        --popover: 218 45% 11%;
+        --popover-foreground: 210 40% 96%;
+        --primary: 205 85% 58%;
+        --primary-foreground: 218 55% 7%;
+        --secondary: 237 45% 62%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 218 35% 16%;
+        --muted-foreground: 215 20% 68%;
+        --accent: 207 60% 20%;
+        --accent-foreground: 205 85% 75%;
+        --destructive: 0 72% 55%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 218 30% 19%;
+        --input: 218 30% 22%;
+        --ring: 205 85% 58%;
+        --brand-deep: 222 60% 12%;
+        --hero-from: 220 60% 12%;
+        --hero-to: 211 70% 28%;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        margin: 0;
+        font-family: "Manrope", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    ::selection {
+        background: hsl(var(--primary) / 0.25);
+    }
+}
+
+.font-heading {
+    font-family: "Poppins", "Manrope", sans-serif;
+}
+
+.font-tech {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.hero-gradient {
+    background-color: hsl(var(--hero-from));
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%23ffffff' stroke-opacity='0.12' stroke-width='1.5'/%3E%3C/svg%3E"),
+        linear-gradient(120deg, hsl(var(--hero-from)) 0%, hsl(var(--hero-to)) 100%);
+    background-size: 56px 100px, 100% 100%;
+}
+
+.dark .hero-gradient {
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%23ffffff' stroke-opacity='0.06' stroke-width='1.5'/%3E%3C/svg%3E"),
+        linear-gradient(120deg, hsl(var(--hero-from)) 0%, hsl(var(--hero-to)) 100%);
+}
+
+.hex-clip {
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+.product-tile {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.35);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.55);
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}

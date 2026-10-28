@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run App (Docker - everything)",
+      "detail": "Starts MongoDB + backend + frontend in one go. Then open http://localhost:3000",
+      "type": "shell",
+      "command": "docker compose up --build",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop App (Docker)",
+      "type": "shell",
+      "command": "docker compose down",
+      "problemMatcher": []
+    },
+    {
+      "label": "Install backend deps (no Docker)",
+      "type": "shell",
+      "command": "pip install -r requirements-local.txt",
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Install frontend deps (no Docker)",
+      "type": "shell",
+      "command": "yarn install",
+      "options": { "cwd": "${workspaceFolder}/frontend" },
+      "problemMatcher": []
+    }
+  ]
+}

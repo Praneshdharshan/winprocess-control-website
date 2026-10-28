@@ -1,0 +1,61 @@
+# ---------------------------------------------------------------------------
+# Win Process Control Engineering — full app in one command.
+#
+#   docker compose up --build
+#
+# Starts three services:
+#   - mongo     : local MongoDB database (data kept in a named volume)
+#   - backend   : FastAPI API on http://localhost:8001
+#   - frontend  : React website on http://localhost:3000
+#
+# Open http://localhost:3000 in your browser once it is running.
+# Stop everything with:  docker compose down
+# ---------------------------------------------------------------------------
+services:
+  mongo:
+    image: mongo:7
+    container_name: winprocess-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: winprocess-backend
+    restart: unless-stopped
+    depends_on:
+      - mongo
+    ports:
+      - "8001:8001"
+    environment:
+      MONGO_URL: "mongodb://mongo:27017"
+      DB_NAME: "winprocess"
+      CORS_ORIGINS: "http://localhost:3000"
+      # The enquiry email only sends for real with a valid Emergent email key.
+      # The placeholder lets the app boot so you can browse the whole site.
+      EMERGENT_EMAIL_KEY: "${EMERGENT_EMAIL_KEY:-local-dev-placeholder}"
+      EMAIL_FROM_NAME: "Win Process Control Engineering"
+      EMAIL_REPLY_TO: "${EMAIL_REPLY_TO:-info@winprocess.local}"
+      OWNER_EMAIL: "${OWNER_EMAIL:-info@winprocess.local}"
+
+  frontend:
+    build: ./frontend
+    container_name: winprocess-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    environment:
+      REACT_APP_BACKEND_URL: "http://localhost:8001"
+      HOST: "0.0.0.0"
+      PORT: "3000"
+      WDS_SOCKET_PORT: "3000"
+      CI: "false"
+      # Needed so file changes are detected inside the container on Mac/Windows
+      WATCHPACK_POLLING: "true"
+
+volumes:
+  mongo_data:

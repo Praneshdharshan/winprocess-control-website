@@ -1,0 +1,143 @@
+{
+  "project_name": "Win Process - Industrial Instrumentation & Valves Manufacturing Website",
+  "app_type": "Multi-page Corporate Manufacturing Website",
+  "tech_stack": {
+    "framework": "React.js (JavaScript)",
+    "styling": "Tailwind CSS",
+    "animation": "Framer Motion, Lucide Icons",
+    "components": "Shadcn UI (customized)",
+    "notifications": "Sonner toast"
+  },
+  "brand_identity": {
+    "company_name": "Win Process",
+    "tagline": "Precision Engineering & High-Pressure Instrumentation Solutions",
+    "established": "2018",
+    "email": "winprocess2018@gmail.com",
+    "phones": [
+      "9003243440",
+      "9003220422"
+    ],
+    "whatsapp": "919003243440",
+    "address": "Coimbatore / Industrial Area, Tamil Nadu, India",
+    "aesthetic_archetype": "Swiss & Precision Engineering (High Contrast, Metallic Accents, Technical Grids, Tactical Minimalism)",
+    "emotional_tone": "Robust, Credible, High-Precision, Engineering Excellence, Industrial Trust"
+  },
+  "typography": {
+    "font_strategy": "Industrial Technical Archetype",
+    "headings_font": "Barlow Condensed / Outfit / sans-serif (Bold, high impact uppercase overlines)",
+    "body_font": "Inter / System Sans (High legibility, clear data scanning)",
+    "code_mono_font": "JetBrains Mono / Source Code Pro (For specifications, pressure ratings, tolerance details)",
+    "scale_hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_card_title": "text-xl sm:text-2xl font-semibold",
+      "h4_sub": "text-lg font-medium",
+      "body_text": "text-base sm:text-lg text-slate-300 leading-relaxed",
+      "caption_label": "text-xs font-mono uppercase tracking-[0.2em] text-cyan-400"
+    }
+  },
+  "colors": {
+    "theme_mode": "Dark Industrial Precision (Navy/Slate Base with Steel Blue & Safety Amber/Cyan Accents)",
+    "palette": {
+      "background_primary": "#0B0F17",
+      "background_secondary": "#111827",
+      "surface_card": "#1E293B",
+      "surface_card_hover": "#334155",
+      "border_subtle": "rgba(255, 255, 255, 0.08)",
+      "border_active": "rgba(6, 182, 212, 0.5)",
+      "primary_accent": "#06B6D4",
+      "primary_accent_hover": "#0891B2",
+      "secondary_steel": "#94A3B8",
+      "alert_amber": "#F59E0B",
+      "success_emerald": "#10B981",
+      "text_main": "#F8FAFC",
+      "text_muted": "#94A3B8",
+      "whatsapp_green": "#25D366"
+    },
+    "gradient_rules": "No soft rainbow gradients. Use technical directional subtle glows, radial spot lights on card hover, or solid metallic borders."
+  },
+  "surface_and_lighting": {
+    "nav_header": "Backdrop-blur-md bg-slate-900/90 border-b border-slate-800 text-white z-50 fixed top-0 width-full",
+    "cards": "bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-lg p-6 relative overflow-hidden group",
+    "buttons": "Pill or crisp 4px rounded buttons. Primary: bg-cyan-600 hover:bg-cyan-500 text-white font-semibold py-3 px-6 shadow-lg shadow-cyan-950/50 transition-all active:scale-95. Secondary: border border-slate-700 hover:bg-slate-800 text-slate-200.",
+    "modals": "Enquiry popup overlay bg-black/80 backdrop-blur-sm, modal content bg-slate-900 border border-slate-700 text-white max-w-lg shadow-2xl rounded-xl p-6 md:p-8"
+  },
+  "layout_and_bento": {
+    "hero_section": "Asymmetric bento / split screen: Left side text intro + CTA buttons + quick stats badge, Right side interactive technical product preview / high quality industrial machinery render",
+    "stats_bar": "4-column grid (grid-cols-2 md:grid-cols-4) with metric counters: 100% Leak Proof, 10,000+ PSI Rated, 500+ Industrial Clients, 100+ Custom Components",
+    "products_grid": "3-column grid (grid-cols-1 md:grid-cols-2 lg:grid-cols-3) featuring major product categories with spec chips, download brochure links, and instant inquiry triggers",
+    "about_grid": "Split visual section with CNC machining video/photo backdrop, quality certificates, material grades (SS 316, SS 304, Monel, Hastelloy, Inconel)",
+    "contact_section": "Dual layout with direct Google map placeholder / address block, direct phone & email action cards, and responsive interactive quote request form"
+  },
+  "motion_and_animations": {
+    "library": "Framer Motion",
+    "page_transitions": "Fade-in with slight vertical slide up (y: 20 to 0, opacity: 0 to 1)",
+    "scroll_reveal": "Staggered reveal for grid items with viewport once configuration",
+    "hover_effects": "Card glow borders, subtle scale (1.02), icon pulse",
+    "floating_whatsapp": "Fixed bottom-right button with pulsing pulse animation ring for high visibility",
+    "enquiry_popup": "Triggered via header CTA, hero CTA, card 'Inquire Now' buttons, and floating bottom-left button"
+  },
+  "image_urls": {
+    "hero_industrial_bg": "https://images.unsplash.com/photo-1765218933298-dc55fdfb517a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwc3RhaW5sZXNzJTIwc3RlZWwlMjB0dWJlJTIwZml0dGluZ3MlMjB2YWx2ZXMlMjBtYW51ZmFductdXJpbmd8ZW58MHx8fHwxNzg4ODYwNjc4fDA&ixlib=rb-4.1.0&q=85",
+    "workshop_cnc": "https://images.unsplash.com/photo-1740209475472-aa7d280f7452?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxjbmMlMjBtYWNoaW5pbmclMjBwcmVjaXNpb24lMjBmYWN0b3J5JTIwd29ya3Nob3B8ZW58MHx8fHwxNzg4ODYwNjc4fDA&ixlib=rb-4.1.0&q=85",
+    "pressure_gauges_valves": "https://images.unsplash.com/photo-1694532438941-06bb0d95dae5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwcHJlc3N1cmUlMjBnYXVnZSUyMHZhbHZlJTIwbWFuaWZvbGQlMjBpbnN0cnVtZW50fGVufDB8fHx8MTc5MzEwOTExMHww&ixlib=rb-4.1.0&q=85",
+    "tube_fittings_pipes": "https://images.unsplash.com/photo-1642797735471-3e90055c5ff9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwc3RhaW5sZXNzJTIwc3RlZWwlMjB0dWJlJTIwZml0dGluZ3MlMjB2YWx2ZXMlMjBtYW51ZmFductdXJpbmd8ZW58MHx8fHwxNzg4ODYwNjc4fDA&ixlib=rb-4.1.0&q=85",
+    "machining_precision": "https://images.unsplash.com/photo-1666618090858-fbcee636bd3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwyfHxjbmMlMjBtYWNoaW5pbmclMjBwcmVjaXNpb24lMjBmYWN0b3J5JTIwd29ya3Nob3B8ZW58MHx8fHwxNzg4ODYwNjc4fDA&ixlib=rb-4.1.0&q=85",
+    "analog_gauges": "https://images.unsplash.com/photo-1563062067-6d3e3add387d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwcHJlc3N1cmUlMjBnYXVnZSUyMHZhbHZlJTIwbWFuaWZvbGQlMjBpbnN0cnVtZW50fGVufDB8fHx8MTc5MzEwOTExMHww&ixlib=rb-4.1.0&q=85"
+  },
+  "product_catalog_categories": [
+    {
+      "id": "double-ferrule-fittings",
+      "name": "Double Ferrule Tube Fittings",
+      "description": "High pressure SS 316 / SS 304 leak-proof double ferrule tube fittings designed for critical instrumentation lines.",
+      "image": "https://images.unsplash.com/photo-1642797735471-3e90055c5ff9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwc3RhaW5sZXNzJTIwc3RlZWwlMjB0dWJlJTIwZml0dGluZ3MlMjB2YWx2ZXMlMjBtYW51ZmFductdXJpbmd8ZW58MHx8fHwxNzg4ODYwNjc4fDA&ixlib=rb-4.1.0&q=85",
+      "specs": ["Max Pressure: 10,000 PSI", "Size Range: 1/16\" to 2\"", "Material: SS316, SS304, Monel, Inconel"]
+    },
+    {
+      "id": "needle-ball-valves",
+      "name": "Needle & Ball Valves",
+      "description": "Precision shut-off and regulation needle valves, 2-way / 3-way high pressure ball valves for gas and liquid service.",
+      "image": "https://images.unsplash.com/photo-1694532438941-06bb0d95dae5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwcHJlc3N1cmUlMjBnYXVnZSUyMHZhbHZlJTIwbWFuaWZvbGQlMjBpbnN0cnVtZW50fGVufDB8fHx8MTc5MzEwOTExMHww&ixlib=rb-4.1.0&q=85",
+      "specs": ["Working Pressure: up to 6,000 PSI", "Connections: NPT, BSPT, Tube OD", "Seat Material: PTFE, PEEK, Delrin"]
+    },
+    {
+      "id": "manifold-valves",
+      "name": "Manifold Valves (2-Way, 3-Way, 5-Way)",
+      "description": "Direct and remote mounting valve manifolds for pressure transmitters and differential pressure applications.",
+      "image": "https://images.unsplash.com/photo-1563062067-6d3e3add387d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwcHJlc3N1cmUlMjBnYXVnZSUyMHZhbHZlJTIwbWFuaWZvbGQlMjBpbnN0cnVtZW50fGVufDB8fHx8MTc5MzEwOTExMHww&ixlib=rb-4.1.0&q=85",
+      "specs": ["Types: 2-Valve, 3-Valve, 5-Valve Manifolds", "Rating: 6000 PSI @ 200°C", "Testing: 100% Hydrostatic Tested"]
+    },
+    {
+      "id": "pressure-regulators",
+      "name": "Pressure Regulators & Gauges",
+      "description": "Single and dual stage cylinder regulators, high accuracy industrial bourdon tube pressure gauges.",
+      "image": "https://images.unsplash.com/photo-1694532438941-06bb0d95dae5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwcHJlc3N1cmUlMjBnYXVnZSUyMHZhbHZlJTIwbWFuaWZvbGQlMjBpbnN0cnVtZW50fGVufDB8fHx8MTc5MzEwOTExMHww&ixlib=rb-4.1.0&q=85",
+      "specs": ["Accuracy: Class 1.0 / 1.6", "Dial Size: 63mm, 100mm, 150mm", "Inlet Pressure: Up to 300 Bar"]
+    },
+    {
+      "id": "thermowells-pipe-fittings",
+      "name": "Thermowells & Heavy Duty Fittings",
+      "description": "Barstock solid drilled thermowells, threaded and socket weld high pressure pipe fittings.",
+      "image": "https://images.unsplash.com/photo-1666618090858-fbcee636bd3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxjbmMlMjBtYWNoaW5pbmclMjBwcmVjaXNpb24lMjBmYWN0b3J5JTIwd29ya3Nob3B8ZW58MHx8fHwxNzg4ODYwNjc4fDA&ixlib=rb-4.1.0&q=85",
+      "specs": ["Process Connection: Flanged / Threaded", "Insertion Length: Custom as per drawing", "Material: SS316L, Duplex, Titanium"]
+    },
+    {
+      "id": "flexible-hoses",
+      "name": "SS Flexible Corrugated Hoses",
+      "description": "Stainless steel braided flexible hoses with end connections for extreme thermal and dynamic vibrations.",
+      "image": "https://images.unsplash.com/photo-1765218933298-dc55fdfb517a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwc3RhaW5sZXNzJTIwc3RlZWwlMjB0dWJlJTIwZml0dGluZ3MlMjB2YWx2ZXMlMjBtYW51ZmFductdXJpbmd8ZW58MHx8fHwxNzg4ODYwNjc4fDA&ixlib=rb-4.1.0&q=85",
+      "specs": ["Braid Material: SS 304 / SS 316", "Temp Range: -200°C to +600°C", "End Connections: Swivel, Male/Female NPT, Flanged"]
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Ensure all components are in .js format matching the React project setup.",
+    "Implement multi-page routing using React Router DOM with pages: Home ('/'), About Us ('/about'), Products ('/products'), Contact ('/contact').",
+    "Add a fixed global WhatsApp Click-to-Chat float button on bottom-right (linking to https://wa.me/919003243440 with default text 'Hello Win Process, I have an inquiry for industrial components').",
+    "Add a global 'Get in Touch / Quick Enquiry' popup dialog component accessible from all pages via top header button, floating trigger button, and hero CTAs.",
+    "Ensure header navigation is fixed with backdrop-blur and full contrast. Never leave text floating over hero image without background/scrim.",
+    "Include complete data-testid attributes on all interactive elements (e.g. data-testid='nav-home-link', data-testid='enquiry-modal-submit-button', data-testid='whatsapp-chat-button').",
+    "Connect the enquiry form to backend API endpoint POST /api/enquiries with toast notifications on submission success.",
+    "Include detailed product search/filter by category on the Products page.",
+    "Display company phones (9003243440 / 9003220422) and email (winprocess2018@gmail.com) clearly in top bar, contact section, and footer."
+  ]
+}
